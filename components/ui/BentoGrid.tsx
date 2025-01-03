@@ -51,16 +51,16 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = ()=>{
-    navigator.clipboard.writeText("foyindolapo@gmail.com")
+  const handleCopy = () => {
+    navigator.clipboard.writeText("foyindolapo@gmail.com");
 
-    setCopied(true)
-  }
+    setCopied(true);
+  };
 
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.3]",
         className
       )}
       style={{
@@ -159,13 +159,12 @@ export const BentoGridItem = ({
                 /> */}
               </div>
 
-              <MagicButton 
-                  title={copied ? "Email Copied": "Copy my email"}
-                  icon={<IoCopyOutline/>}
-                  position="left"
-                  otherClasses="!bg-[#161a31]"
-                  handleClick={handleCopy}
-
+              <MagicButton
+                title={copied ? "Email Copied" : "Copy my email"}
+                icon={<IoCopyOutline />}
+                position="left"
+                otherClasses="dark:!bg-[#161a31] !bg-black"
+                handleClick={handleCopy}
               />
             </div>
           )}
