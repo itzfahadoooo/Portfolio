@@ -9,39 +9,59 @@ const Hero = () => {
   return (
     <div className="pb-20 pt-36">
       <div>
-        <Spotlight
+        {/* <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
+          fill="var(--spotlight-white)"
+        /> */}
+        {/* <Spotlight
           className="h-[80vh] w-[50vw] top-10 left-full"
-          fill="purple"
+          fill="var(--spotlight-purple)"
+        /> */}
+        <Spotlight 
+          className="left-80 top-28 h-[80vh] w-[50vw]" 
+          fill="var(--spotlight-blue)"
         />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight 
+          className="left-80 -top-28 h-[80vh] w-[50vw] !rotate-90" 
+          fill="var(--spotlight-blue)"
+        />
+        <Spotlight 
+          className="left top-20 h-[80vh] w-[50vw]" 
+          fill="var(--spotlight-white)"
+        />
+        <Spotlight 
+          className="left-96 -top-1 h-[80vh] w-[50vw] !rotate-90" 
+          fill="var(--spotlight-white)"
+        />
+        {/* <Spotlight
+          className="-top-40 -left-10 md:left-96 md:-top-[5.5rem] h-screen !rotate-90"
+          fill="var(--spotlight-white)"
+        /> */}
       </div>
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-screen w-full dark:bg-black-100 bg-black dark:bg-grid-white/[0.03] bg-grid-white/[0.1]
          absolute top-0 left-0 flex items-center justify-center"
       >
         <div
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-           bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+           bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-white max-w-80">
             Dynamic Web Magic with Next.js <span><Toggle/></span>
           </h2>
 
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Hi, I&apos;m Fahad...a Next.js Developer."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Fahad...a Next.js Developer based in Nigeria.
+            Transforming Concepts into Seamless User Experiences
+            
           </p>
 
           <a href="/about">

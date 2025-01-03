@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -33,36 +33,46 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
+
+    --spotlight-white: #fff; /* Dark mode spotlight white */
+    --spotlight-purple: #fff; /* Dark mode spotlight purple */
+    --spotlight-blue: #fff; /* Dark mode spotlight blue */
+
   }
 
-  .dark {
-    --background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
-    --foreground: #C0C0C0; /* Metallic silver */
+  .dark { 
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
     --card: 240 10% 3.9%;
-    --card-foreground: #C0C0C0; /* Metallic silver */
+    --card-foreground: 0 0% 98%;
 
     --popover: 240 10% 3.9%;
-    --popover-foreground: #C0C0C0; /* Metallic silver */
+    --popover-foreground: 0 0% 98%;
 
-    --primary: #C0C0C0; /* Metallic silver */
+    --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
 
     --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: #C0C0C0; /* Metallic silver */
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 240 3.7% 15.9%;
-    --muted-foreground: #C0C0C0; /* Metallic silver */
+    --muted-foreground: 240 5% 64.9%;
 
     --accent: 240 3.7% 15.9%;
-    --accent-foreground: #C0C0C0; /* Metallic silver */
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: #C0C0C0; /* Metallic silver */
+    --destructive-foreground: 0 0% 98%;
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    
+    --spotlight-white: white; /* Dark mode spotlight white */
+    --spotlight-purple: purple; /* Dark mode spotlight purple */
+    --spotlight-blue: blue; /* Dark mode spotlight blue */
+
   }
 }
 
