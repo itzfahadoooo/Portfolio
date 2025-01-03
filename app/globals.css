@@ -38,9 +38,18 @@
     --spotlight-purple: #fff; /* Dark mode spotlight purple */
     --spotlight-blue: #fff; /* Dark mode spotlight blue */
 
+    --bento-bg: #10132e;
+
+    --gradient-background: rgb(0, 0, 0);
+
+    --gradient-backgroundgradient: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ); /* Dark mode gradient */
   }
 
-  .dark { 
+  .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -68,11 +77,20 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
-    
+
     --spotlight-white: white; /* Dark mode spotlight white */
     --spotlight-purple: purple; /* Dark mode spotlight purple */
     --spotlight-blue: blue; /* Dark mode spotlight blue */
 
+    --bento-bg: #000000;
+
+    --gradient-background: rgb(4, 7, 29);
+
+    --gradient-background-gradient: linear-gradient(
+      90deg,
+      rgba(4, 7, 29, 1) 0%,
+      rgba(12, 14, 35, 1) 100%
+    ); /* Dark mode gradient */
   }
 }
 

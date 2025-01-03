@@ -66,7 +66,7 @@ export const BentoGridItem = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: "var(--gradient-background)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
@@ -123,20 +123,20 @@ export const BentoGridItem = ({
                 {["React.js", "Next.js", "TypeScript"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center dark:bg-[#10132e] bg-[#FFFFFF20]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                <span className="py-4 px-3 rounded-lg text-center dark:bg-[#10132e] bg-[#FFFFFF20]" />
               </div>
 
               <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                <span className="py-4 px-3 rounded-lg text-center dark:bg-[#10132e] bg-[#FFFFFF20]" />
                 {["Vuejs", "AWS", "MongoDB"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center dark:bg-[#10132e] bg-[#FFFFFF20]"
                   >
                     {item}
                   </span>
