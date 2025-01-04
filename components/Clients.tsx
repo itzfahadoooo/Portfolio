@@ -10,7 +10,7 @@ const Clients = () => {
     <div id="testimonials" className="py-20">
       <h1 className="heading">
         Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        <span className="dark:text-purple text-white-100"> satisfied clients</span>
       </h1>
       
 
