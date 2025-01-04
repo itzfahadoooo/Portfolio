@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Toggle from "../Toggle";
 
 export const FloatingNav = ({
   navItems,
@@ -35,7 +36,7 @@ export const FloatingNav = ({
         if (direction < 0) {
           setVisible(true);
         } else {
-          setVisible(false);
+          setVisible(true);
         }
       }
     }
@@ -70,8 +71,10 @@ export const FloatingNav = ({
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="text-sm !cursor-pointer">{navItem.name}</span>
+            
           </Link>
         ))}
+        <Toggle/>
       </motion.div>
     </AnimatePresence>
   );

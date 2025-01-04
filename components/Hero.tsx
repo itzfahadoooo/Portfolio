@@ -17,20 +17,20 @@ const Hero = () => {
           className="h-[80vh] w-[50vw] top-10 left-full"
           fill="var(--spotlight-purple)"
         /> */}
-        <Spotlight 
-          className="left-80 top-28 h-[80vh] w-[50vw]" 
+        <Spotlight
+          className="left-80 top-28 h-[80vh] w-[50vw]"
           fill="var(--spotlight-blue)"
         />
-        <Spotlight 
-          className="left-80 -top-28 h-[80vh] w-[50vw] !rotate-90" 
+        <Spotlight
+          className="left-80 -top-28 h-[80vh] w-[50vw] !rotate-90"
           fill="var(--spotlight-blue)"
         />
-        <Spotlight 
-          className="left top-20 h-[80vh] w-[50vw]" 
+        <Spotlight
+          className="left top-20 h-[80vh] w-[50vw]"
           fill="var(--spotlight-white)"
         />
-        <Spotlight 
-          className="left-96 -top-1 h-[80vh] w-[50vw] !rotate-90" 
+        <Spotlight
+          className="left-96 -top-1 h-[80vh] w-[50vw] !rotate-90"
           fill="var(--spotlight-white)"
         />
         {/* <Spotlight
@@ -50,23 +50,29 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-white max-w-80">
-            Dynamic Web Magic with Next.js <span><Toggle/></span>
-          </h2>
+          {/* <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 text-white max-w-80">
+            Dynamic Web Magic with Next.js
+          </h2> */}
 
           <TextGenerateEffect
-            words="Hi, I&apos;m Fahad...a Next.js Developer."
+            words="Hi, I'm Fahad...a MERN Stack Developer."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Transforming Concepts into Seamless User Experiences
-            
+            Building Seamless User Experiences with the MERN Stack
           </p>
 
-          <a href="/about">
-            <MagicButton title="Show my work" icon={<FaLocationArrow/>} position="right"/>
-
+          <a
+            href="https://github.com/itzfahadoooo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
           </a>
         </div>
       </div>
