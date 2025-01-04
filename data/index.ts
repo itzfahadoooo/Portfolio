@@ -215,6 +215,6 @@ export const navItems = [
     {
       id: 3,
       img: "/link.svg",
-      link: "https://x.com/weirdo__boy",
+      link: "https://www.linkedin.com/in/fahad-idrees-31753832b/",
     },
   ];
