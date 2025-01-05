@@ -27,8 +27,8 @@ const Experience = () => {
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             // remove bg-white dark:bg-slate-900
-            className="flex-1 text-white dark:text-white border-white/[0.2] dark:border-slate-800"
-          >
+            className="flex-1 text-white dark:text-white border-white/[0.2] dark:border-slate-800 transition-transform duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-600"
+            >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
                 src={card.thumbnail}
