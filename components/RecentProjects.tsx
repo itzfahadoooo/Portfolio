@@ -8,10 +8,10 @@ const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">
-        A curated collection of{" "}
-        <span className="dark:text-purple text-white-100">recent projects</span>
+        Check out my{" "}
+        <span className="dark:text-purple text-white-100">recent projects...</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 py-3">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div key={id} className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[500px] w-[80vw] ">
             <PinContainer title={link} href={link} >

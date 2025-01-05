@@ -10,11 +10,11 @@ const Clients = () => {
     <div id="testimonials" className="py-20">
       <h1 className="heading">
         Kind words from
-        <span className="dark:text-purple text-white-100"> satisfied clients</span>
+        <span className="dark:text-purple text-white-100"> tutors...</span>
       </h1>
       
 
-      <div className="flex flex-col items-center max-lg:mt-10">
+      <div className="flex flex-col items-center max-lg:mt-10 my-10">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
