@@ -9,6 +9,7 @@ const RecentProjects = () => {
     <div className="pt-32 pt" id="projects">
       <h1 className="heading">
         Check out my{" "}
+        
         <span className="dark:text-purple text-white-100">recent projects...</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 py-3">
