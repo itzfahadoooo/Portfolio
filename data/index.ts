@@ -107,33 +107,33 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      "Fahad stands out as one of the most exceptional IT students I've had the privilege to mentor. His progress has been nothing short of remarkable, showcasing his commitment to mastering the field. With an unwavering dedication to learning, he consistently strives for growth and excellence. His work ethic and passion for IT are truly commendable. Fahad's journey so far reflects great potential and a bright future in the industry.",
+      name: "Onyedika Chidelu",
+      title: "IT Supervisor - Triune BuiltTech Solutions",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      "I am truly impressed with Fahad's progress in web development. His growth in the field is remarkable, and his dedication is evident in every step he takes. If he continues at this pace, there will be no limits to what he can achieve. Fahad's potential is inspiring and speaks volumes about his commitment to success. His journey is a testament to his bright future in the industry.",
+      name: "Loyal Kenneth",
+      title: "Triune BuiltTech Solutions",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Collaborating with Fahad was an absolute pleasure. His professionalism, punctuality, and unwavering dedication to achieving outstanding results were evident in every aspect of our project. Fahad's passion for web development shines through in his attention to detail and creative approach. If you're looking to take your website to the next level and enhance your brand, Fahad is the perfect partner to help you achieve your goals.",
+      name: "Mathias Echioda",
+      title: "Occupy Ministries",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Fahad is an exceptional individual with a rare blend of creativity, determination, and technical expertise. As a MERN stack developer, he demonstrates an impressive ability to tackle complex challenges and deliver innovative solutions. His dedication to personal and professional growth is evident in his commitment to learning, as seen in his journey from mastering front-end design to building a JavaScript animation library.",
+      name: "Hameed Idrees",
+      title: "S.M.O Limited",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Fahad's passion for technology, coupled with his collaborative spirit, makes him a valuable asset in any team or project. His bright future is a reflection of his hard work, resilience, and drive to excel in the ever-evolving tech industry",
+      name: "Rasheedat Raji",
+      title: "Asst Director NASRDA",
     },
   ];
   
