@@ -59,7 +59,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Hey you, lets start a project together!!!",
+      title: "Hey you🌚, lets start a project together!!!",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -108,7 +108,7 @@ export const navItems = [
     {
       quote:
       "Fahad stands out as one of the most exceptional IT students I've had the privilege to mentor. His progress has been nothing short of remarkable, showcasing his commitment to mastering the field. With an unwavering dedication to learning, he consistently strives for growth and excellence. His work ethic and passion for IT are truly commendable. Fahad's journey so far reflects great potential and a bright future in the industry.",
-      name: "Onyedika Chidelu",
+      name: "Onyedika Chigelu",
       title: "IT Supervisor - Triune BuiltTech Solutions",
     },
     {
@@ -173,7 +173,7 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Developer Intern",
+      title: "Frontend Developer Intern - Nigerian Communications Commission",
       desc: "Contributed to the development of user-friendly websites and platforms using React.js, improving functionality and performance.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
