@@ -16,7 +16,10 @@ const Home = () => {
   return (
     <main className="relative dark:bg-black-100 bg-black flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
       <div className="max-w-7xl w-full relative">
-        <div style={{ width: "100%", height: "600px", position: "absolute" }}>
+        <div
+          className="hidden lg:block w-full h-[600px] absolute"
+          style={{ width: "100%", height: "600px", position: "absolute" }}
+        >
           <LightRays
             raysOrigin="top-center"
             raysColor="#0000FF"
