@@ -55,12 +55,12 @@ const Hero = () => {
           </h2> */}
 
           <TextGenerateEffect
-            words="Hi, I'm Fahad...a MERN Stack Developer."
+            words="Hi, I'm Fahad...a FRONTEND Developer."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Building Seamless User Experiences with the MERN Stack
+            Building Seamless User Experiences with Frontend Magic.
           </p>
 
           <a
