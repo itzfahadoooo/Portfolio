@@ -1,15 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import TextType from "./ui/TextType";
 
 const Photo = () => {
   return (
-    <div className="cursor-pointer flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-24 xl:gap-32 2xl:gap-56 2xl:mt-52 relative z-10">
-      <h1 className="heading">
-        About <span className="dark:text-purple text-white-100">moi.....</span>
-      </h1>
-      
-      <div className="relative flex items-center justify-center">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 xl:gap-28 2xl:gap-40 2xl:mt-52 relative z-10">
+      <div className="flex-shrink-0">
+        <h1 className="heading">About</h1>
+      </div>
+
+      <div className="relative flex items-center justify-center cursor-pointer flex-shrink-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
@@ -68,11 +69,30 @@ const Photo = () => {
                   repeat: Infinity,
                   repeatType: "reverse",
                 },
-                rotate: { duration: 20, repeat: Infinity, repeatType: "reverse" },
+                rotate: {
+                  duration: 20,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                },
               }}
             />
           </motion.svg>
         </motion.div>
+      </div>
+
+      {/* Fixed width container for TextType to prevent layout shifts */}
+      <div className="w-32 lg:w-40 xl:w-48 flex justify-center flex-shrink-0">
+        <TextType
+          text={["Me", "Moi", "Mich", "Watashi","Ana", "Fahad", "Na", "Wǒ", "Mujhe","Eména", "我", "私", "나", "मुझे", "أنا"]}
+          typingSpeed={50}
+          pauseDuration={1500}
+          showCursor={true}
+          cursorCharacter="_"
+          className="heading dark:text-purple text-white-100 text-center"
+          variableSpeed={{ min: 150, max: 300 }}
+          cursorBlinkDuration={1}
+          textColors={["currentColor"]}
+        />
       </div>
     </div>
   );
