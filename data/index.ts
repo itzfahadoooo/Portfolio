@@ -17,6 +17,16 @@ export const navItems = [
       spareImg: "",
     },
     {
+      id: 14,
+      title: "",
+      description: "",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      imgClassName: "w-full h-full",
+      titleClassName: "",
+      img: "/b1.svg",
+      spareImg: "",
+    },
+    {
       id: 2,
       title: "I'm very flexible with time zone communications",
       description: "",

@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import DecryptedText from "./DecryptedText";
 
 export const BentoGrid = ({
   className,
@@ -108,12 +109,29 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
-            {description}
-          </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
-            {title}
-          </div>
+          {/* Move id === 14 content inside the main content container */}
+          {id === 14 ? (
+            <div className="flex flex-col h-full justify-center items-start">
+              <DecryptedText
+                text="I emphasize client collaboration and promote transparent communication"
+                speed={100}
+                maxIterations={20}
+                characters="ABCD1234!?"
+                parentClassName="block leading-tight"
+                encryptedClassName="encrypted text-lg lg:text-3xl font-sans font-bold"
+                className="revealed text-lg lg:text-3xl font-sans font-bold max-w-96 cursor-pointer z-20"
+              />
+            </div>
+          ) : (
+            <>
+              <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
+                {description}
+              </div>
+              <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+                {title}
+              </div>
+            </>
+          )}
 
           {id === 2 && <GlobeDemo />}
 
