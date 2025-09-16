@@ -8,6 +8,7 @@ import Toggle from "./Toggle";
 const Hero = () => {
   return (
     <div className="pb-20 pt-32">
+      
       <div>
         
         {/* <Spotlight
