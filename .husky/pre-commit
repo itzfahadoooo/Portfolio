@@ -5,6 +5,7 @@ FIXED=0
 FAILED=0
 
 # ── Detect repo type ──────────────────────────────────────────────────────────
+echo"running husky"
 IS_PYTHON=0
 IS_NODE=0
 [ -f "pyproject.toml" ] || [ -f "setup.py" ] || [ -f "requirements.txt" ] && IS_PYTHON=1
