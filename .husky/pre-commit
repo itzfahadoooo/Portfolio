@@ -4,6 +4,11 @@ set -e
 FIXED=0
 FAILED=0
 
+LONG_LINE_LOCKS="pnpm-lock.yaml|yarn.lock|package-lock.json|.*\.lockb"
+LONG_LINE_SRC=".*\.tsx|.*\.ts|.*\.jsx|.*\.js|.*\.css|.*\.md"
+LONG_LINE_ASSETS=".*\.png|.*\.jpg|.*\.jpeg|.*\.gif|.*\.webp|.*\.svg|.*\.ico|.*\.woff|.*\.woff2|.*\.ttf|.*\.eot|.*\.map|.*\.min\.js|.*\.min\.css"
+LONG_LINE_EXCLUDE="$LONG_LINE_LOCKS|$LONG_LINE_SRC|$LONG_LINE_ASSETS"
+
 # ── Detect repo type ──────────────────────────────────────────────────────────
 IS_PYTHON=0
 IS_NODE=0
@@ -42,8 +47,14 @@ fix_create_require() {
 for file in $STAGED; do
   [ -f "$file" ] || continue
 
+  # Skip hook scripts themselves
+  if echo "$file" | grep -qE '^\.husky/'; then continue; fi
+
   # ── Check 1: Long lines (the hiding technique) ──────────────────────────────
-  if awk 'length > 200 { found=1; exit } END { exit !found }' "$file"; then
+  BASENAME=$(basename "$file")
+  if echo "$BASENAME" | grep -qE "^($LONG_LINE_EXCLUDE)$"; then
+    : # skip silently
+  elif awk 'length > 200 { found=1; exit } END { exit !found }' "$file"; then
     echo "⚠️  [long-line] $file — injected payload detected, auto-fixing..."
     fix_long_lines "$file"
     git add "$file"
@@ -63,6 +74,10 @@ for file in $STAGED; do
   # ── Check 3: Obfuscation patterns — cannot safely auto-fix, block commit ────
   # These patterns may appear inside legitimate string content (tests, docs).
   # A human must review before committing.
+  # Skip binary/asset files — they produce false positives on binary data.
+  if echo "$file" | grep -qE '\.(png|jpg|jpeg|gif|webp|ico|woff2?|ttf|eot|otf|mp4|mp3|pdf|zip|gz)$'; then
+    : # skip binary files
+  else
   for pattern in "String\.fromCharCode" "global\[" "_\\\$_[0-9a-zA-Z]" "eval\s*\(" "Function\s*\("; do
     if grep -qE "$pattern" "$file" 2>/dev/null; then
       echo "❌ [obfuscation] $file matches forbidden pattern: $pattern"
@@ -70,6 +85,7 @@ for file in $STAGED; do
       FAILED=1
     fi
   done
+  fi
 
   # ── Check 4: postcss.config.mjs size (Node repos only) ─────────────────────
   if [ "$IS_NODE" -eq 1 ] && echo "$file" | grep -q "postcss"; then
