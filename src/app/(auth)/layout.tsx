@@ -10,7 +10,7 @@ const layout = ({ children }: LayoutProps) => {
     <div
       className=" w-full h-screen bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/images/auth-bg.png')",
+        background: "linear-gradient(180deg, #FF8A00 0%, #FF4D8D 100%)",
       }}
     >
       <div className="mx-auto relative max-w-360 max-h-360 w-full h-full justify-center flex ">
