@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { Button } from '@/components/ui/button';
@@ -22,23 +23,6 @@ const contactSchema = z.object({
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
-
-function zodResolver(schema: z.ZodType<ContactFormValues>) {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return async (values: any): Promise<any> => {
-    const result = schema.safeParse(values);
-    if (result.success) return { values: result.data, errors: {} };
-
-    const errors: Record<string, { message: string; type: string }> = {};
-    for (const issue of result.error.issues) {
-      const key = String(issue.path[0]);
-      if (key && !errors[key]) {
-        errors[key] = { message: issue.message, type: String(issue.code) };
-      }
-    }
-    return { values: {}, errors };
-  };
-}
 
 export default function ContactForm() {
   const {
