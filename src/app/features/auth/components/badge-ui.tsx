@@ -9,9 +9,10 @@ export const BadgeUI = () => {
   const pathname = usePathname();
   const pageImg =
     pathname === "/forgot-password" || pathname === "/reset-password"
-      ? "/images/padlock.png"
-      : "/images/signup-badge.png";
-  const image = pathname === "/login" ? "/images/badge-img.png" : pageImg;
+      ? "/assets/auth-flow/padlock.png"
+      : "/assets/auth-flow/signup-badge.png";
+  const image =
+    pathname === "/login" ? "/assets/auth-flow/badge-img.png" : pageImg;
 
   return (
     <div className="w-full h-full relative flex-col flex-[1.4] justify-between hidden lg:flex">

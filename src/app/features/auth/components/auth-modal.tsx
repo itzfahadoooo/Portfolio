@@ -5,7 +5,7 @@ import { getEmailProviderUrl } from "@/lib/utils";
 import { Button } from "./button";
 
 export const AuthModal = ({
-  imageSrc = "/images/mail-img.png",
+  imageSrc = "/assets/auth-flow/mail-img.png",
   title,
   email,
   description,

@@ -85,7 +85,7 @@ const Page = () => {
         <AuthModal
           closeModal={() => setShowModal(false)}
           email={email}
-          imageSrc="/images/mail-img.png"
+          imageSrc="/assets/auth-flow/mail-img.png"
           title="We’ve sent you a reset link"
           description={
             <>

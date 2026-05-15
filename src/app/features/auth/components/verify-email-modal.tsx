@@ -12,7 +12,7 @@ export const VerifyEmailModal = () => {
         <div className="relative h-52 mb-5">
           <Image
             fill
-            src={"/images/emoji.png"}
+            src={"/assets/auth-flow/emoji.png"}
             className="object-contain w-full h-full"
             alt={""}
           />
